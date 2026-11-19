@@ -2,7 +2,7 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import {getAuth,GoogleAuthProvider,signInWithPopup,signInAnonymously,onAuthStateChanged,signOut} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
 import {getDatabase,ref,set,onValue,remove} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-database.js';
-const app=initializeApp({apiKey:"AIzaSyDLbIRipVqXPubESO1Xg9U3ELuCmRxCN6A",authDomain:"prizma-c67c1.firebaseapp.com",databaseURL:"https://prizma-c67c1-default-rtdb.europe-west1.firebasedatabase.app",projectId:"prizma-c67c1",appId:"1:329116114364:web:ad1b5b6f505ba178c5dfb9"});
+const app=initializeApp({apiKey:"AIzaSyDLbIRipVqXPubESO1Xg9U3EluCmRxCN6A",authDomain:"prizma-c67c1.firebaseapp.com",databaseURL:"https://prizma-c67c1-default-rtdb.europe-west1.firebasedatabase.app",projectId:"prizma-c67c1",appId:"1:329116114364:web:ad1b5b6f505ba178c5dfb9"});
 const auth=getAuth(app),db=getDatabase(app),$=id=>document.getElementById(id),status=s=>$('status').textContent=s;let room=null,unsub=null,opened=false,sent=false;
 const params=new URLSearchParams(location.hash.slice(1)),tid=params.get('t'),rid=params.get('r'),student=!!(tid&&rid&&/^[\w-]{1,128}$/.test(tid)&&/^[\w-]{1,128}$/.test(rid));
 const fail=e=>status('Қате: '+(e.code||e.message));
