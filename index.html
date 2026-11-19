@@ -292,9 +292,13 @@ card.innerHTML=`<div class="emoji">${t[0]}</div>
 <h3 style="color:${t[3]}">PRIZMA ${t[1]}</h3>
 <p>${t[2]}</p>`;
 card.onclick=()=>{
-document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
-document.getElementById("detailText").textContent=t[2];
-dialog.showModal();
+    if(t[1]==="GAME"){
+        window.location.href="game.html";
+        return;
+    }
+    document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
+    document.getElementById("detailText").textContent=t[2];
+    dialog.showModal();
 };
 grid.appendChild(card);
 });
