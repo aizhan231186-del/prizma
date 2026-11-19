@@ -296,6 +296,10 @@ card.onclick=()=>{
         window.location.href="game.html";
         return;
     }
+    if(t[1]==="QUIZ"){
+        window.location.href="quiz.html";
+        return;
+    }
     document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
     document.getElementById("detailText").textContent=t[2];
     dialog.showModal();
