@@ -300,6 +300,10 @@ card.onclick=()=>{
         window.location.href="quiz.html";
         return;
     }
+    if(t[1]==="TEAM"){
+        window.location.href="team.html";
+        return;
+    }
     document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
     document.getElementById("detailText").textContent=t[2];
     dialog.showModal();
