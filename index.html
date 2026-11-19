@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRIZMA | Цифрлық педагогика</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0e091e;
+color:white;
+min-height:100vh;
+}
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+padding:24px 6%;
+border-bottom:1px solid #ffffff18;
+background:#120c25;
+}
+.logo{
+font-size:28px;
+font-weight:900;
+letter-spacing:6px;
+}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#ded2fa;text-decoration:none}
+.hero{
+text-align:center;
+padding:65px 20px 85px;
+background:
+radial-gradient(ellipse at 50% 30%,#49218b77,transparent 65%),
+radial-gradient(ellipse at right,#005b9344,transparent 60%);
+}
+.prism{
+width:min(500px,95%);
+height:auto;
+animation:float 5s ease-in-out infinite;
+}
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-14px)}
+}
+h1{
+font-size:clamp(55px,12vw,110px);
+letter-spacing:9px;
+margin:10px 0;
+background:linear-gradient(110deg,#fff,#be91ff,#00e5ff,#fff);
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+}
+h2{font-size:30px}
+.hero h2{font-size:clamp(24px,4vw,42px)}
+p{line-height:1.7;color:#c8bddf}
+.btn{
+display:inline-block;
+padding:16px 28px;
+border:0;
+border-radius:14px;
+background:linear-gradient(120deg,#6a00ff,#a64dff);
+color:white;
+font-size:16px;
+text-decoration:none;
+cursor:pointer;
+margin:8px;
+}
+section.content{
+max-width:1250px;
+margin:auto;
+padding:45px 25px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.card{
+text-align:left;
+background:linear-gradient(145deg,#25183f,#151027);
+border:1px solid #ffffff20;
+border-radius:22px;
+padding:25px;
+color:white;
+cursor:pointer;
+transition:transform .25s,border-color .25s;
+}
+.card:hover{
+transform:translateY(-6px);
+border-color:#9d4dff;
+box-shadow:0 0 30px #9d4dff33;
+}
+.card .emoji{font-size:38px}
+.card h3{letter-spacing:3px;font-size:23px}
+.card p{font-size:15px}
+.search{
+width:100%;
+padding:17px 20px;
+background:#1b122f;
+border:1px solid #78609e;
+border-radius:14px;
+color:white;
+font-size:17px;
+margin:15px 0 25px;
+}
+.panel{
+background:#1b132e;
+border:1px solid #ffffff20;
+padding:30px;
+border-radius:24px;
+}
+.stat{
+text-align:center;
+padding:22px;
+}
+.stat strong{
+font-size:40px;
+color:#ba92ff;
+}
+footer{
+text-align:center;
+padding:45px 20px;
+border-top:1px solid #ffffff20;
+}
+dialog{
+width:min(90%,550px);
+background:#211535;
+color:white;
+border:1px solid #9d4dff;
+border-radius:24px;
+padding:30px;
+}
+dialog::backdrop{background:#000b}
+@media(prefers-reduced-motion:reduce){
+.prism{animation:none}
+*{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">◈ PRIZMA</div>
+<nav>
+<a href="#home">Басты бет</a>
+<a href="#tools">Құралдар</a>
+<a href="#library">Кітапхана</a>
+<a href="#course">Курстар</a>
+<a href="#about">Біз туралы</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<svg class="prism" viewBox="0 0 500 260">
+<defs>
+<linearGradient id="glass">
+<stop stop-color="#d6e8ff"/>
+<stop offset=".5" stop-color="#8e45fa"/>
+<stop offset="1" stop-color="#00c8ff"/>
+</linearGradient>
+</defs>
+<path d="M0 155 L190 120" stroke="white" stroke-width="4"/>
+<g stroke-width="7" opacity=".85">
+<path d="M305 125 L500 45" stroke="#ff527c"/>
+<path d="M305 125 L500 75" stroke="#ff934a"/>
+<path d="M305 125 L500 105" stroke="#ffd166"/>
+<path d="M305 125 L500 135" stroke="#00e5c0"/>
+<path d="M305 125 L500 165" stroke="#00c8ff"/>
+<path d="M305 125 L500 195" stroke="#9d4dff"/>
+</g>
+<polygon points="250,15 145,225 355,225"
+fill="url(#glass)" fill-opacity=".55"
+stroke="#e9d8ff" stroke-width="3"/>
+<polygon points="250,15 260,180 355,225"
+fill="#7440df" fill-opacity=".6"/>
+<path d="M250 15 L260 180 L145 225 M260 180 L355 225"
+stroke="#e3dcff" fill="none"/>
+</svg>
+
+<h1>PRIZMA</h1>
+<h2>Бір сабақ. Мың мүмкіндік.</h2>
+<p>Авторлық цифрлық педагогика мектебі</p>
+<a class="btn" href="#tools">Мүмкіндіктерді ашу →</a>
+
+</section>
+
+<section class="content">
+<div class="grid">
+<div class="stat"><strong>100</strong><p>Авторлық өнім жасау мақсаты</p></div>
+<div class="stat"><strong>12</strong><p>Шығармашылық бағыт</p></div>
+<div class="stat"><strong>∞</strong><p>Жаңа мүмкіндіктер</p></div>
+</div>
+</section>
+
+<section class="content" id="tools">
+<h2>Цифрлық құралдар әлемі</h2>
+<p>Өзіңізге қажетті шығармашылық бағытты таңдаңыз.</p>
+<input class="search" id="search"
+placeholder="🔍 Құралдарды іздеу..."
+aria-label="Құралдарды іздеу">
+<div class="grid" id="categories"></div>
+</section>
+
+<section class="content" id="library">
+<h2>Авторлық өнімдер кітапханасы</h2>
+<div class="grid">
+<div class="panel">
+<div style="font-size:55px">🚪</div>
+<h3>001 — Жеті портал</h3>
+<p>Жасырын тапсырмаларға құрылған интерактивті ойын.</p>
+<p>Жариялауға дайындалуда</p>
+</div>
+<div class="panel">
+<div style="font-size:55px">🔐</div>
+<h3>002 — SECRET CODE</h3>
+<p>Құпия кодты ашу ойыны.</p>
+<p>Жоспарда</p>
+</div>
+<div class="panel">
+<div style="font-size:55px">💎</div>
+<h3>003 — CRYSTAL</h3>
+<p>Асыл тастар арқылы бағалау жүйесі.</p>
+<p>Жоспарда</p>
+</div>
+</div>
+</section>
+
+<section class="content" id="course">
+<div class="panel">
+<h2>PRIZMA ACADEMY</h2>
+<p>Жасанды интеллект арқылы авторлық цифрлық өнім жасауды үйреніңіз.</p>
+<p>Идея → Технология → Практика → Дайын өнім</p>
+<p>Бейнесабақтар мен промпттар жинағы әзірленуде.</p>
+</div>
+</section>
+
+<section class="content" id="about">
+<h2>PRIZMA философиясы</h2>
+<p>Әр мұғалім — өз сабағының авторы.
+Біздің мақсатымыз — педагогтердің шығармашылық
+әлеуетін заманауи технологиялар арқылы дамыту.</p>
+<h3>Ойла. Жаса. Жаңарт. Шабыттандыр.</h3>
+</section>
+
+<footer>
+<div class="logo">PRIZMA</div>
+<p>Бір сабақ. Мың мүмкіндік.</p>
+<p>© 2026 PRIZMA</p>
+</footer>
+
+<dialog id="details">
+<h2 id="detailTitle"></h2>
+<p id="detailText"></p>
+<p>Бұл бағыттың материалдары кезең-кезеңімен жарияланады.</p>
+<button class="btn" id="closeDialog">Жабу</button>
+</dialog>
+
+<script>
+const tools=[
+["🎮","GAME","Интерактивті ойындар","#9d4dff"],
+["🧩","QUIZ","Викториналар","#00c8ff"],
+["👥","TEAM","Топқа бөлу","#00e5c0"],
+["💬","REFLECT","Кері байланыс","#ff6b8b"],
+["📊","SCORE","Бағалау жүйелері","#ffd166"],
+["🎨","ART","Сурет және иллюстрация","#ff934a"],
+["✨","MOTION","Анимация","#bd92ff"],
+["🎬","CINEMA","Видео жасау","#ff6b8b"],
+["✏️","DESIGN","Афиша және дизайн","#00c8ff"],
+["🧊","SPACE","3D және виртуалды әлем","#918aff"],
+["🌐","WEB","Сайттар және бағдарламалар","#00e5c0"],
+["🎙️","VOICE","Дыбыстау және музыка","#e5a1ff"]
+];
+
+const grid=document.getElementById("categories");
+const dialog=document.getElementById("details");
+
+function render(query=""){
+grid.replaceChildren();
+tools.filter(t=>t.join(" ").toLowerCase().includes(query.toLowerCase()))
+.forEach(t=>{
+const card=document.createElement("button");
+card.className="card";
+card.innerHTML=`<div class="emoji">${t[0]}</div>
+<h3 style="color:${t[3]}">PRIZMA ${t[1]}</h3>
+<p>${t[2]}</p>`;
+card.onclick=()=>{
+document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
+document.getElementById("detailText").textContent=t[2];
+dialog.showModal();
+};
+grid.appendChild(card);
+});
+if(!grid.children.length){
+grid.textContent="Құрал табылмады.";
+}
+}
+
+render();
+document.getElementById("search").addEventListener("input",e=>render(e.target.value));
+document.getElementById("closeDialog").onclick=()=>dialog.close();
+</script>
+
+</body>
+</html>
