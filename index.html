@@ -304,6 +304,10 @@ card.onclick=()=>{
         window.location.href="team.html";
         return;
     }
+    if(t[1]==="REFLECT"){
+        window.location.href="reflect.html";
+        return;
+    }
     document.getElementById("detailTitle").textContent="PRIZMA "+t[1];
     document.getElementById("detailText").textContent=t[2];
     dialog.showModal();
